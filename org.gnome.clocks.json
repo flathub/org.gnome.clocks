@@ -5,7 +5,6 @@
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-clocks",
-    "tags": [],
     "finish-args": [
         /* X11 + XShm access */
         "--share=ipc", "--socket=x11",
@@ -39,8 +38,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/geocode-glib/3.25/geocode-glib-3.25.4.1.tar.xz",
-                    "sha256": "f10169262c313dfaa21acf00687c01e0aaf52983524648e8b9e8e42c052dd778"
+                    "url": "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.0.tar.xz",
+                    "sha256": "ea4086b127050250c158beff28dbcdf81a797b3938bb79bbaaecc75e746fbeee"
                 }
             ]
         },
@@ -55,8 +54,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/3.28/libgweather-3.28.1.tar.xz",
-                    "sha256": "157a8388532a751b36befff424b11ed913b2c43689b62cd2060f6847eb730be3"
+                    "url": "https://download.gnome.org/sources/libgweather/3.28/libgweather-3.28.2.tar.xz",
+                    "sha256": "081ce81653afc614e12641c97a8dd9577c524528c63772407ae2dbcde12bde75"
                 }
             ]
         },
@@ -66,14 +65,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.28/gnome-desktop-3.28.0.tar.xz",
-                    "sha256": "f1df71c39e32147f6d58f53a9c05b964b00b7c98fbca090419355437c72fd59d"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/3.30/gnome-desktop-3.30.0.tar.xz",
+                    "sha256": "45494f6af18d9125a0fd1024f7442fcc5d3219fca79527d4aa1906e37af795fd"
                 }
             ]
         },
         {
             "name": "gsound",
-	    "cleanup": ["/bin"],
+	        "cleanup": ["/bin"],
             "sources": [
                 {
                     "type": "archive",
@@ -88,8 +87,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-clocks/3.28/gnome-clocks-3.28.0.tar.xz",
-                    "sha256": "d48e0bd0479b575adfc7beaa7cd9088258ee27142ab6305915a92cc8761aa7b5"
+                    "url": "https://download.gnome.org/sources/gnome-clocks/3.30/gnome-clocks-3.30.0.tar.xz",
+                    "sha256": "76148a6cf44b24504292a1b355e2bb1038fab41b0c0be815ebdf09c833b8c8fb"
                 }
             ]
         }
