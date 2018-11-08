@@ -35,6 +35,7 @@
     "modules": [
         {
             "name": "geocode-glib",
+            "buildsystem": "meson",
             "sources": [
                 {
                     "type": "archive",
