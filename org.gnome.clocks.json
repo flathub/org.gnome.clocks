@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.clocks",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.28",
+    "runtime-version": "3.30",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-clocks",
@@ -35,6 +35,7 @@
     "modules": [
         {
             "name": "geocode-glib",
+            "buildsystem": "meson",
             "sources": [
                 {
                     "type": "archive",
@@ -65,8 +66,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.30/gnome-desktop-3.30.0.tar.xz",
-                    "sha256": "45494f6af18d9125a0fd1024f7442fcc5d3219fca79527d4aa1906e37af795fd"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/3.30/gnome-desktop-3.30.2.tar.xz",
+                    "sha256": "5475e693cb7ada801a36e8d16bc0dbb58930b793f455419b205cd9241d63d14c"
                 }
             ]
         },
@@ -87,8 +88,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-clocks/3.30/gnome-clocks-3.30.0.tar.xz",
-                    "sha256": "76148a6cf44b24504292a1b355e2bb1038fab41b0c0be815ebdf09c833b8c8fb"
+                    "url": "https://download.gnome.org/sources/gnome-clocks/3.30/gnome-clocks-3.30.1.tar.xz",
+                    "sha256": "ec9a86855d5ab29428329a47fa865dedf67b22895e0306a2cffc8ccdbfc92e01"
                 }
             ]
         }
