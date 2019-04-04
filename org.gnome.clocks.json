@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.clocks",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.30",
+    "runtime-version": "3.32",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-clocks",
@@ -53,25 +53,26 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/3.28/libgweather-3.28.2.tar.xz",
-                    "sha256": "081ce81653afc614e12641c97a8dd9577c524528c63772407ae2dbcde12bde75"
+                    "url": "https://download.gnome.org/sources/libgweather/3.32/libgweather-3.32.0.tar.xz",
+                    "sha256": "de9a2b392a8b27e012ed80bb9c950085692cd8e898c367c092df15f964a91d13"
                 }
             ]
         },
         {
             "name": "gnome-desktop",
-            "config-opts": ["--disable-debug-tools", "--disable-udev"],
+            "buildsystem": "meson",
+            "config-opts": ["-Ddebug-tools=false", "-Dudev=disabled"],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.30/gnome-desktop-3.30.2.tar.xz",
-                    "sha256": "5475e693cb7ada801a36e8d16bc0dbb58930b793f455419b205cd9241d63d14c"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/3.32/gnome-desktop-3.32.0.tar.xz",
+                    "sha256": "a6393dc5fc29fc0652ac84c73b3da205d0b0168128c4cf6d27797a08f3d07b54"
                 }
             ]
         },
         {
             "name": "gsound",
-	        "cleanup": ["/bin"],
+            "cleanup": ["/bin"],
             "sources": [
                 {
                     "type": "archive",
@@ -86,8 +87,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-clocks/3.30/gnome-clocks-3.30.1.tar.xz",
-                    "sha256": "ec9a86855d5ab29428329a47fa865dedf67b22895e0306a2cffc8ccdbfc92e01"
+                    "url": "https://download.gnome.org/sources/gnome-clocks/3.32/gnome-clocks-3.32.0.tar.xz",
+                    "sha256": "6c8d90b0044f535f239bd94a7d0e46d0c9da32a6a141ff1233a78fa99a7cd4f0"
                 }
             ]
         }
