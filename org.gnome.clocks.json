@@ -37,8 +37,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.0.tar.xz",
-                    "sha256": "ea4086b127050250c158beff28dbcdf81a797b3938bb79bbaaecc75e746fbeee"
+                    "url": "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.1.tar.xz",
+                    "sha256": "5baa6ab76a76c9fc567e4c32c3af2cd1d1784934c255bc5a62c512e6af6bde1c"
                 }
             ]
         },
