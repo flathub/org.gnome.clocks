@@ -1,8 +1,7 @@
 {
     "app-id": "org.gnome.clocks",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.32",
-    "branch": "stable",
+    "runtime-version": "3.34",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-clocks",
     "finish-args": [
@@ -15,16 +14,8 @@
         /* Needs to talk to the network: */
         "--share=network",
         /* Needed to get geo-positioning */
-        "--system-talk-name=org.freedesktop.GeoClue2",
-        /* Needed for dconf to work */
-        "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+        "--system-talk-name=org.freedesktop.GeoClue2"
     ],
-    "build-options" : {
-        "env": {
-            "V": "1"
-        }
-    },
     "cleanup": ["/include", "/lib/pkgconfig",
                 "/share/pkgconfig", "/share/aclocal",
                 "/man", "/share/man", "/share/gtk-doc",
@@ -65,8 +56,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.32/gnome-desktop-3.32.0.tar.xz",
-                    "sha256": "a6393dc5fc29fc0652ac84c73b3da205d0b0168128c4cf6d27797a08f3d07b54"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/3.34/gnome-desktop-3.34.0.tar.xz",
+                    "sha256": "8d331ee655c1d56b2b97562a07c7a7598ff6706a11ff1cdce97423ebc6b62426"
                 }
             ]
         },
@@ -87,8 +78,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-clocks/3.32/gnome-clocks-3.32.0.tar.xz",
-                    "sha256": "6c8d90b0044f535f239bd94a7d0e46d0c9da32a6a141ff1233a78fa99a7cd4f0"
+                    "url": "https://download.gnome.org/sources/gnome-clocks/3.34/gnome-clocks-3.34.0.tar.xz",
+                    "sha256": "61195f357c63b65b75e209494e12a122a802c75333290e136813565dca94f03c"
                 }
             ]
         }
