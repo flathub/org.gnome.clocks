@@ -14,7 +14,8 @@
         /* Needs to talk to the network: */
         "--share=network",
         /* Needed to get geo-positioning */
-        "--system-talk-name=org.freedesktop.GeoClue2"
+        "--system-talk-name=org.freedesktop.GeoClue2",
+        "--metadata=X-DConf=migrate-path=/org/gnome/clocks/"
     ],
     "cleanup": ["/include", "/lib/pkgconfig",
                 "/share/pkgconfig", "/share/aclocal",
