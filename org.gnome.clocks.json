@@ -113,6 +113,10 @@
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/gnome-clocks/3.36/gnome-clocks-3.36.0.tar.xz",
                     "sha256": "4c978b0c7f7b9daebd272d0175f8a54415e2078f134f48add5cf24362eef49c6"
+                },
+                {
+                    "type": "patch",
+                    "path": "43d12471ddc9ef88406cfe7fee5a9acb5078cbe2.patch"
                 }
             ]
         }
