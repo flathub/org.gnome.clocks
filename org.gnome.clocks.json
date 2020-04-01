@@ -6,7 +6,7 @@
     "command": "gnome-clocks",
     "finish-args": [
         /* X11 + XShm access */
-        "--share=ipc", "--socket=x11",
+        "--share=ipc", "--socket=fallback-x11",
         /* Wayland access */
         "--socket=wayland",
         /* Pulseaudio access for alarms */
@@ -58,8 +58,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.36/gnome-desktop-3.36.0.tar.xz",
-                    "sha256": "4b04c359ccddeffb15f2e148a7871c474f6cfed1e0da21de060a93f6b9ae5c15"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/3.36/gnome-desktop-3.36.1.tar.xz",
+                    "sha256": "8c6fe59e567f134e4f6508d968d5d09cbe12382d18af9a11a4f51ada6c80a880"
                 }
             ]
         },
