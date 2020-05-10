@@ -58,8 +58,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.36/gnome-desktop-3.36.1.tar.xz",
-                    "sha256": "8c6fe59e567f134e4f6508d968d5d09cbe12382d18af9a11a4f51ada6c80a880"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/3.36/gnome-desktop-3.36.2.tar.xz",
+                    "sha256": "38f994dcb1e1ae093d1c929c7acc4f88e39111e43b5fdc13125b0f6e2311c789"
                 }
             ]
         },
@@ -109,12 +109,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-clocks/3.36/gnome-clocks-3.36.0.tar.xz",
-                    "sha256": "4c978b0c7f7b9daebd272d0175f8a54415e2078f134f48add5cf24362eef49c6"
-                },
-                {
-                    "type": "patch",
-                    "path": "43d12471ddc9ef88406cfe7fee5a9acb5078cbe2.patch"
+                    "url": "https://download.gnome.org/sources/gnome-clocks/3.36/gnome-clocks-3.36.2.tar.xz",
+                    "sha256": "f11b1b22ec1f285e509883684c0b1f4a51496aea105591239e5b26f8986751e6"
                 }
             ]
         }
