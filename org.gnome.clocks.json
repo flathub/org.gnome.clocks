@@ -46,8 +46,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/3.36/libgweather-3.36.0.tar.xz",
-                    "sha256": "d2ffeec01788d03d1bbf35113fc2f054c6c3600721088f827bcc31e5c603a32d"
+                    "url": "https://download.gnome.org/sources/libgweather/3.36/libgweather-3.36.1.tar.xz",
+                    "sha256": "de2709f0ee233b20116d5fa9861d406071798c4aa37830ca25f5ef2c0083e450"
                 }
             ]
         },
