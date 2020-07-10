@@ -46,8 +46,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/3.36/libgweather-3.36.0.tar.xz",
-                    "sha256": "d2ffeec01788d03d1bbf35113fc2f054c6c3600721088f827bcc31e5c603a32d"
+                    "url": "https://download.gnome.org/sources/libgweather/3.36/libgweather-3.36.1.tar.xz",
+                    "sha256": "de2709f0ee233b20116d5fa9861d406071798c4aa37830ca25f5ef2c0083e450"
                 }
             ]
         },
@@ -58,8 +58,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.36/gnome-desktop-3.36.2.tar.xz",
-                    "sha256": "38f994dcb1e1ae093d1c929c7acc4f88e39111e43b5fdc13125b0f6e2311c789"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/3.36/gnome-desktop-3.36.4.tar.xz",
+                    "sha256": "007bbd48c1ca2fcb184713c923174c1d4328c3e33a2271ca536bdd3b71229bc6"
                 }
             ]
         },
