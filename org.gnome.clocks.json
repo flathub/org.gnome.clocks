@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.clocks",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
+    "runtime-version": "3.38",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-clocks",
     "finish-args": [
@@ -58,8 +58,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.36/gnome-desktop-3.36.4.tar.xz",
-                    "sha256": "007bbd48c1ca2fcb184713c923174c1d4328c3e33a2271ca536bdd3b71229bc6"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/3.38/gnome-desktop-3.38.0.tar.xz",
+                    "sha256": "089dbbe3c66fe5575659a4a385d5d4bbd99cf637034df317f21cf586b5dd6b90"
                 }
             ]
         },
@@ -98,8 +98,8 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "url": "https://source.puri.sm/Librem5/libhandy/-/archive/v0.0.13/libhandy-v0.0.13.tar.gz",
-                    "sha256": "138bec94e66d15a7a19350b65845d4529bcd969ea913ab3eb438f56fe47d5d37"
+                    "url": "https://download.gnome.org/sources/libhandy/1.0/libhandy-1.0.0.tar.xz",
+                    "sha256": "a9398582f47b7d729205d6eac0c068fef35aaf249fdd57eea3724f8518d26699"
                 }
             ]
         },
@@ -109,8 +109,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-clocks/3.36/gnome-clocks-3.36.2.tar.xz",
-                    "sha256": "f11b1b22ec1f285e509883684c0b1f4a51496aea105591239e5b26f8986751e6"
+                    "url": "https://download.gnome.org/sources/gnome-clocks/3.38/gnome-clocks-3.38.0.tar.xz",
+                    "sha256": "d956cb050f1ca46b443519e4f59ab204290d6270dec91c74b53895aecc794438"
                 }
             ]
         }
