@@ -59,7 +59,7 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/gnome-desktop/40/gnome-desktop-40.0.tar.xz",
-                    "sha256": "8cd2c50230f4b46e3e4e3e507402e2682ebc70b4e9f8eacb477141d3e3c64059"
+                    "sha256": "20abfd3f831e4e8092b55839311661dc73b2bf13fc9bef71c4a5a4475da9ee04"
                 }
             ]
         },
