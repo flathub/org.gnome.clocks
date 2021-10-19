@@ -5,23 +5,26 @@
     "sdk": "org.gnome.Sdk",
     "command": "gnome-clocks",
     "finish-args": [
-        /* X11 + XShm access */
-        "--share=ipc", "--socket=fallback-x11",
-        /* Wayland access */
+        "--share=ipc",
+        "--socket=fallback-x11",
         "--socket=wayland",
-        /* Pulseaudio access for alarms */
         "--socket=pulseaudio",
-        /* Needs to talk to the network: */
         "--share=network",
-        /* Needed to get geo-positioning */
         "--system-talk-name=org.freedesktop.GeoClue2",
         "--metadata=X-DConf=migrate-path=/org/gnome/clocks/"
     ],
-    "cleanup": ["/include", "/lib/pkgconfig",
-                "/share/pkgconfig", "/share/aclocal",
-                "/man", "/share/man", "/share/gtk-doc",
-                "/share/vala",
-                "*.la", "*.a"],
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/share/pkgconfig",
+        "/share/aclocal",
+        "/man",
+        "/share/man",
+        "/share/gtk-doc",
+        "/share/vala",
+        "*.la",
+        "*.a"
+    ],
     "modules": [
         "shared-modules/intltool/intltool-0.51.json",
         "shared-modules/libcanberra/libcanberra.json",
@@ -32,7 +35,11 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.2.tar.xz",
-                    "sha256": "01fe84cfa0be50c6e401147a2bc5e2f1574326e2293b55c69879be3e82030fd1"
+                    "sha256": "01fe84cfa0be50c6e401147a2bc5e2f1574326e2293b55c69879be3e82030fd1",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "geocode-glib"
+                    }
                 }
             ]
         },
@@ -48,31 +55,48 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/libgweather/40/libgweather-40.0.tar.xz",
-                    "sha256": "ca4e8f2a4baaa9fc6d75d8856adb57056ef1cd6e55c775ba878ae141b6276ee6"
+                    "sha256": "ca4e8f2a4baaa9fc6d75d8856adb57056ef1cd6e55c775ba878ae141b6276ee6",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "libgweather"
+                    }
                 }
             ]
         },
         {
             "name": "gnome-desktop",
             "buildsystem": "meson",
-            "config-opts": ["-Ddebug-tools=false", "-Dudev=disabled"],
+            "config-opts": [
+                "-Ddebug-tools=false",
+                "-Dudev=disabled"
+            ],
             "sources": [
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/gnome-desktop/41/gnome-desktop-41.0.tar.xz",
-                    "sha256": "69cb1d3d9a10700eb66348ef1c0e66a855fc5a97ae62902df97a499da11562d2"
+                    "sha256": "69cb1d3d9a10700eb66348ef1c0e66a855fc5a97ae62902df97a499da11562d2",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "gnome-desktop"
+                    }
                 }
             ]
         },
         {
             "name": "gsound",
             "buildsystem": "meson",
-            "cleanup": ["/bin"],
+            "cleanup": [
+                "/bin"
+            ],
             "sources": [
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz",
-                    "sha256": "ca2d039e1ebd148647017a7f548862350bc9af01986d39f10cfdc8e95f07881a"
+                    "sha256": "ca2d039e1ebd148647017a7f548862350bc9af01986d39f10cfdc8e95f07881a",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "gsound"
+                    }
                 }
             ]
         },
@@ -82,7 +106,12 @@
                 {
                     "type": "archive",
                     "url": "http://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2",
-                    "sha256": "cb518b20eef05ec2e82dda1fa89a292c1760dc023aba91b8aa69bafac85e8a14"
+                    "sha256": "cb518b20eef05ec2e82dda1fa89a292c1760dc023aba91b8aa69bafac85e8a14",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 10152,
+                        "url-template": "http://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-$version.tar.bz2"
+                    }
                 }
             ]
         },
@@ -93,7 +122,11 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/gnome-clocks/41/gnome-clocks-41.0.tar.xz",
-                    "sha256": "df8c8b04ab92fa618f5dee5118571ef9fc9e8a5b795ea00a35c6dc677cb02dac"
+                    "sha256": "df8c8b04ab92fa618f5dee5118571ef9fc9e8a5b795ea00a35c6dc677cb02dac",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "gnome-clocks"
+                    }
                 }
             ]
         }
