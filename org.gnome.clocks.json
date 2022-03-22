@@ -11,7 +11,6 @@
         "--socket=wayland",
         "--socket=pulseaudio",
         "--share=network",
-        "--system-talk-name=org.freedesktop.GeoClue2",
         "--metadata=X-DConf=migrate-path=/org/gnome/clocks/"
     ],
     "cleanup": [
