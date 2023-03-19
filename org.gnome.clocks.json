@@ -85,8 +85,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/43/gnome-desktop-43.tar.xz",
-                    "sha256": "3d6e153317486157596aa3802f87676414c570738f450a94a041fe8835420a69",
+                    "url": "https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.0.tar.xz",
+                    "sha256": "42c773745d84ba14bc1cf1c4c6f4606148803a5cd337941c63964795f3c59d42",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
@@ -133,8 +133,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-clocks/43/gnome-clocks-43.0.tar.xz",
-                    "sha256": "b0743b70d00880aa3bcdcc7f7f34c8c2286257b5c81737d4f981bc8c4f4f981d",
+                    "url": "https://download.gnome.org/sources/gnome-clocks/44/gnome-clocks-44.0.tar.xz",
+                    "sha256": "17d7a97365cb8f1a023a1d78f7501f3353217fa7577d73afe7d0ca1e3b4f3838",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
