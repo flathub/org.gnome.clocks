@@ -1,8 +1,15 @@
 {
     "id": "org.gnome.clocks",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "44",
+    "runtime-version": "45",
     "sdk": "org.gnome.Sdk",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.vala"
+    ],
+    "build-options": {
+        "prepend-path": "/usr/lib/sdk/vala/bin/",
+        "prepend-ld-library-path": "/usr/lib/sdk/vala/lib"
+    },
     "command": "gnome-clocks",
     "finish-args": [
         "--device=dri",
@@ -26,8 +33,6 @@
         "*.a"
     ],
     "modules": [
-        "shared-modules/intltool/intltool-0.51.json",
-        "shared-modules/libcanberra/libcanberra.json",
         {
             "name": "geocode-glib",
             "buildsystem": "meson",
@@ -58,8 +63,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/4.2/libgweather-4.2.0.tar.xz",
-                    "sha256": "af8a812da0d8976a000e1d62572c256086a817323fbf35b066dbfdd8d2ca6203",
+                    "url": "https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.0.tar.xz",
+                    "sha256": "366e866ff2a708b894cfea9475b8e8ff54cb3e2b477ea72a8ade0dabee5f48a4",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libgweather",
@@ -95,46 +100,13 @@
             ]
         },
         {
-            "name": "gsound",
-            "buildsystem": "meson",
-            "cleanup": [
-                "/bin"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz",
-                    "sha256": "ca2d039e1ebd148647017a7f548862350bc9af01986d39f10cfdc8e95f07881a",
-                    "x-checker-data": {
-                        "type": "gnome",
-                        "name": "gsound"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "sound-theme-freedesktop",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2",
-                    "sha256": "cb518b20eef05ec2e82dda1fa89a292c1760dc023aba91b8aa69bafac85e8a14",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 10152,
-                        "url-template": "http://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-$version.tar.bz2"
-                    }
-                }
-            ]
-        },
-        {
             "name": "gnome-clocks",
             "buildsystem": "meson",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-clocks/44/gnome-clocks-44.0.tar.xz",
-                    "sha256": "17d7a97365cb8f1a023a1d78f7501f3353217fa7577d73afe7d0ca1e3b4f3838",
+                    "url": "https://download.gnome.org/sources/gnome-clocks/45/gnome-clocks-45.0.tar.xz",
+                    "sha256": "fc8eb4fd9530f1e641dc00ee2086ee7d354a7a00b0a0d1722e305d5c9aab91b5",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
