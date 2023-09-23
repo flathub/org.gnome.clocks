@@ -33,8 +33,6 @@
         "*.a"
     ],
     "modules": [
-        "shared-modules/intltool/intltool-0.51.json",
-        "shared-modules/libcanberra/libcanberra.json",
         {
             "name": "geocode-glib",
             "buildsystem": "meson",
@@ -97,39 +95,6 @@
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "gsound",
-            "buildsystem": "meson",
-            "cleanup": [
-                "/bin"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz",
-                    "sha256": "ca2d039e1ebd148647017a7f548862350bc9af01986d39f10cfdc8e95f07881a",
-                    "x-checker-data": {
-                        "type": "gnome",
-                        "name": "gsound"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "sound-theme-freedesktop",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2",
-                    "sha256": "cb518b20eef05ec2e82dda1fa89a292c1760dc023aba91b8aa69bafac85e8a14",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 10152,
-                        "url-template": "http://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-$version.tar.bz2"
                     }
                 }
             ]
