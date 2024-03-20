@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.clocks",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "45",
+    "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.vala"
@@ -105,8 +105,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-clocks/45/gnome-clocks-45.0.tar.xz",
-                    "sha256": "fc8eb4fd9530f1e641dc00ee2086ee7d354a7a00b0a0d1722e305d5c9aab91b5",
+                    "url": "https://download.gnome.org/sources/gnome-clocks/46/gnome-clocks-46.0.tar.xz",
+                    "sha256": "eaa3c578cdcef9754e668b5626709b73f3526710235f4b72076d2ff49a4f99c7",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
