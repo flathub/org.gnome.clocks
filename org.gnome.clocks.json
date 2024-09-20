@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.clocks",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "47",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.vala"
@@ -63,8 +63,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.2.tar.xz",
-                    "sha256": "a6e427b4770ada48945f3aa906af710fc833cff0d42df91f1828302740d794ec",
+                    "url": "https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.4.tar.xz",
+                    "sha256": "7017677753cdf7d1fdc355e4bfcdb1eba8369793a8df24d241427a939cbf4283",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libgweather",
@@ -90,8 +90,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.0.tar.xz",
-                    "sha256": "42c773745d84ba14bc1cf1c4c6f4606148803a5cd337941c63964795f3c59d42",
+                    "url": "https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.1.tar.xz",
+                    "sha256": "ae7ca55dc9e08914999741523a17d29ce223915626bd2462a120bf96f47a79ab",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
@@ -105,8 +105,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-clocks/46/gnome-clocks-46.0.tar.xz",
-                    "sha256": "eaa3c578cdcef9754e668b5626709b73f3526710235f4b72076d2ff49a4f99c7",
+                    "url": "https://download.gnome.org/sources/gnome-clocks/47/gnome-clocks-47.0.tar.xz",
+                    "sha256": "428bdf4bd17e26de6cef014cd7a7eebd89143c3f2732b24b7da69812baa52131",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
