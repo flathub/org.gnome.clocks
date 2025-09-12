@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.clocks",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.vala"
@@ -58,6 +58,7 @@
             "name": "libgweather",
             "buildsystem": "meson",
             "config-opts": [
+                "-Dtests=false",
                 "-Dgtk_doc=false"
             ],
             "sources": [
@@ -90,8 +91,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.1.tar.xz",
-                    "sha256": "ae7ca55dc9e08914999741523a17d29ce223915626bd2462a120bf96f47a79ab",
+                    "url": "https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.4.tar.xz",
+                    "sha256": "1d8cb9c6a328eb689b0c1269cf53834cc84d851d7e71970cdabba82706b44984",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
@@ -105,8 +106,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-clocks/48/gnome-clocks-48.0.tar.xz",
-                    "sha256": "616ee1fb75300b1f26b9766219e954751360ca0fa0f491311bcf83bf38087c62",
+                    "url": "https://download.gnome.org/sources/gnome-clocks/49/gnome-clocks-49.0.tar.xz",
+                    "sha256": "bf76915f2a492e8a0592fe40b35346593aa39e4e6881d6176e0efd8771d4e6fa",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
