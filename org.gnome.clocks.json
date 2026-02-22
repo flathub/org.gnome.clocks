@@ -3,13 +3,6 @@
     "runtime": "org.gnome.Platform",
     "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
-    "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.vala"
-    ],
-    "build-options": {
-        "prepend-path": "/usr/lib/sdk/vala/bin/",
-        "prepend-ld-library-path": "/usr/lib/sdk/vala/lib"
-    },
     "command": "gnome-clocks",
     "finish-args": [
         "--device=dri",
@@ -22,15 +15,11 @@
     ],
     "cleanup": [
         "/include",
+        "/lib/girepository-1.0",
         "/lib/pkgconfig",
         "/share/pkgconfig",
-        "/share/aclocal",
-        "/man",
-        "/share/man",
-        "/share/gtk-doc",
-        "/share/vala",
-        "*.la",
-        "*.a"
+        "/share/gir-1.0",
+        "/share/vala"
     ],
     "modules": [
         {
