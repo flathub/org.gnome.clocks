@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.clocks",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.vala"
@@ -57,11 +57,28 @@
                 "-Dtests=false",
                 "-Dgtk_doc=false"
             ],
+            "modules": [
+                {
+                    "name": "gweather-locations",
+                    "buildsystem": "meson",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://download.gnome.org/sources/gweather-locations/2026/gweather-locations-2026.2.tar.xz",
+                            "sha256": "e7570a3661e0a752a06387b2032585cf588fc56770b1f9f39f1a55d17b2835fe",
+                            "x-checker-data": {
+                                "type": "gnome",
+                                "name": "gweather-locations"
+                            }
+                        }
+                    ]
+                }
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.4.tar.xz",
-                    "sha256": "7017677753cdf7d1fdc355e4bfcdb1eba8369793a8df24d241427a939cbf4283",
+                    "url": "https://download.gnome.org/sources/libgweather/4.6/libgweather-4.6.0.tar.xz",
+                    "sha256": "7f5d0e8c9685ef2ff46c2f3a57cae48d7bf3540b2d83921f889ef28e6a876788",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libgweather",
@@ -98,13 +115,24 @@
             ]
         },
         {
+            "name": "vorbis-tools",
+            "buildsystem": "autotools",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://downloads.xiph.org/releases/vorbis/vorbis-tools-1.4.3.tar.gz",
+                    "sha256": "a1fe3ddc6777bdcebf6b797e7edfe0437954b24756ffcc8c6b816b63e0460dde"
+                }
+            ]
+        },
+        {
             "name": "gnome-clocks",
             "buildsystem": "meson",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-clocks/49/gnome-clocks-49.0.tar.xz",
-                    "sha256": "bf76915f2a492e8a0592fe40b35346593aa39e4e6881d6176e0efd8771d4e6fa",
+                    "url": "https://download.gnome.org/sources/gnome-clocks/50/gnome-clocks-50.0.tar.xz",
+                    "sha256": "bf167f7f44f4f2fb424d4716652c9ba1f29e16e49071e26a1bb833f8dce794c6",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
