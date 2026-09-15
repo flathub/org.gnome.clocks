@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.clocks",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "51beta",
+    "runtime-version": "51",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.vala"
@@ -95,6 +95,7 @@
             "name": "gnome-desktop",
             "buildsystem": "meson",
             "config-opts": [
+                "-Dqr=disabled",
                 "-Ddebug_tools=false",
                 "-Dudev=disabled",
                 "-Dgtk_doc=false",
