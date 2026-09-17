@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.clocks",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
+    "runtime-version": "51",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.vala"
@@ -95,18 +95,20 @@
             "name": "gnome-desktop",
             "buildsystem": "meson",
             "config-opts": [
+                "-Dqr=disabled",
                 "-Ddebug_tools=false",
                 "-Dudev=disabled",
                 "-Dgtk_doc=false",
                 "-Ddesktop_docs=false",
                 "-Dlegacy_library=false",
+                "-Dsystemd=disabled",
                 "-Dbuild_gtk4=true"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.5.tar.xz",
-                    "sha256": "20e0995a6e3a03e8c1026c5a27bc3f45e69ffcc392ad743dcab6107a541d232f",
+                    "url": "https://download.gnome.org/sources/gnome-desktop/51/gnome-desktop-51.0.tar.xz",
+                    "sha256": "9ebeb9f1769d3c310caeadd921ab34c8f264b92937740518b3bc859a579a6912",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
@@ -131,8 +133,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-clocks/50/gnome-clocks-50.0.tar.xz",
-                    "sha256": "bf167f7f44f4f2fb424d4716652c9ba1f29e16e49071e26a1bb833f8dce794c6",
+                    "url": "https://download.gnome.org/sources/gnome-clocks/51/gnome-clocks-51.0.tar.xz",
+                    "sha256": "4bdf9c0481a83037da1d0fa26d2c2c6a80cb736458fd18fde14acaf7924874c6",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
